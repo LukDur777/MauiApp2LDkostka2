@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2LD.MainPage">
+
+    <ScrollView BackgroundColor="Beige" >
+        <VerticalStackLayout
+            Spacing="25">
+            <Label
+                Text="gra w Kosci Autor: Lukasz Durawa" 
+                BackgroundColor="Brown"
+                FontSize="Title"
+                HorizontalTextAlignment="Center"
+                />
+            <Button 
+                Text="Rzuc koscmi"
+                BackgroundColor="Chocolate"
+                HorizontalOptions="Center"
+                Clicked="MauiApp2LD"/>
+            <FlexLayout 
+                Direction="Row"
+                BackgroundColor="White">
+                
+                <Image
+                    x:Name="Dice0"
+                    FlexLayout.Basis="20%"
+                    Source="kostka1.png" />
+                <Image 
+                    x:Name="Dice1"
+                    FlexLayout.Basis="20%"
+                    Source="kostka2.png" />
+                <Image 
+                    x:Name="Dice2"
+                    FlexLayout.Basis="20%"                   
+                    Source="kostka3.png" />
+                <Image 
+                    x:Name="Dice3"
+                    FlexLayout.Basis="20%"          
+                    Source="kostka4.png" />
+                <Image 
+                    x:Name="Dice4"
+                    FlexLayout.Basis="20%"         
+                    Source="kostka5.png" />
+                
+            </FlexLayout>
+            <Label  
+                x:Name="RollScorelabel"
+                Text="tego losowania"
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                x:Name="ScoreLabel"
+                Text="Wynik gry: " 
+                HorizontalTextAlignment="Center"/>
+            <Button
+                Text="Resetuj wynik"
+                BackgroundColor="Chocolate" 
+                Clicked="buttonclicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
